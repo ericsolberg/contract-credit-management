@@ -1,0 +1,11 @@
+ID,contract_ID,eventType,eventDate,previousValue,newValue,statusChange,triggeredProcessID,description
+770e8400-e29b-41d4-a716-446655440001,"660e8400-e29b-41d4-a716-446655440001","Created",2024-01-15T09:00:00Z,,500000.00,"Draft -> PendingApproval","PROC-001","Contract created and submitted for credit check decision"
+770e8400-e29b-41d4-a716-446655440002,"660e8400-e29b-41d4-a716-446655440001","CreditCheckDecision",2024-01-15T10:30:00Z,,,,"PROC-002","Credit check decision: Include in credit assessment"
+770e8400-e29b-41d4-a716-446655440003,"660e8400-e29b-41d4-a716-446655440001","StatusChanged",2024-01-15T14:00:00Z,,"","PendingApproval -> Active","PROC-003","Credit assessment completed - approved"
+770e8400-e29b-41d4-a716-446655440004,"660e8400-e29b-41d4-a716-446655440002","Created",2024-02-01T08:30:00Z,,250000.00,"Draft -> PendingApproval","PROC-004","Contract created and submitted for credit check decision"
+770e8400-e29b-41d4-a716-446655440005,"660e8400-e29b-41d4-a716-446655440002","StatusChanged",2024-02-01T11:45:00Z,,"","PendingApproval -> Active","PROC-005","Credit assessment completed - approved"
+770e8400-e29b-41d4-a716-446655440006,"660e8400-e29b-41d4-a716-446655440003","Created",2024-01-20T10:15:00Z,,320000.00,"Draft -> PendingApproval","PROC-006","Contract created and submitted for credit check decision"
+770e8400-e29b-41d4-a716-446655440007,"660e8400-e29b-41d4-a716-446655440003","StatusChanged",2024-01-20T16:20:00Z,,"","PendingApproval -> Active","PROC-007","Credit assessment completed - approved"
+770e8400-e29b-41d4-a716-446655440008,"660e8400-e29b-41d4-a716-446655440004","Created",2024-03-01T09:45:00Z,,150000.00,"Draft -> PendingApproval","PROC-008","Contract created and submitted for credit check decision"
+770e8400-e29b-41d4-a716-446655440009,"660e8400-e29b-41d4-a716-446655440005","Created",2024-01-01T08:00:00Z,,1500000.00,"Draft -> PendingApproval","PROC-009","Contract created - excluded from credit check"
+770e8400-e29b-41d4-a716-446655440010,"660e8400-e29b-41d4-a716-446655440005","StatusChanged",2024-01-01T12:00:00Z,,"","PendingApproval -> Active","PROC-010","Escalated approval completed - approved"
