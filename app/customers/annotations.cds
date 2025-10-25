@@ -1,1 +1,1 @@
-using ContractManagementService as service from '../../srv/service';
+using contract.management.service.ContractManagementService as service from '../../srv/service';

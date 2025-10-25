@@ -49,7 +49,24 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {}
+        "sap.fe.templates": {},
+        "sap.ushell": {}
+      }
+    },
+    "rootView": {
+      "viewName": "contract.management.ui.contracts.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "componentUsages": {
+      "valueContractsList": {
+        "name": "sap.fe.templates.ListReport",
+        "settings": {}
+      },
+      "valueContractsObjectPage": {
+        "name": "sap.fe.templates.ObjectPage",
+        "settings": {}
       }
     },
     "contentDensities": {
@@ -60,7 +77,9 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "contract.management.ui.contracts.i18n.i18n"
+          "bundleName": "contract.management.ui.contracts.i18n.i18n",
+          "supportedLocales": [""],
+          "fallbackLocale": ""
         }
       },
       "": {
@@ -81,7 +100,16 @@
       "css": []
     },
     "routing": {
-      "config": {},
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "type": "View",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "contract.management.ui.contracts.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
       "routes": [
         {
           "pattern": ":?query:",
@@ -101,6 +129,7 @@
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
+              "initialLoad": true,
               "contextPath": "/ValueContracts",
               "variantManagement": "Page",
               "navigation": {
@@ -126,6 +155,7 @@
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
+              "initialLoad": true,
               "editableHeaderContent": false,
               "contextPath": "/ValueContracts"
             }
